@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
   </head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
   <body onload="showModal()">
-    
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <div id="modalbox">
-      
       <img
         src="https://images.pexels.com/photos/6107466/pexels-photo-6107466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         class="cookies"
       />
       <p>We use cookies to optimize user experience and content.</p>
-      
-      <button type="button"  onclick="closeModal()">Accept</button>
-      
-      
-      <img src="glyphicon glyphicon-remove"  class="close-icon" onclick="closeModal()">
-      
-      
+
+      <button type="button" onclick="closeModal()">Accept</button>
+
+      <span
+        class="glyphicon glyphicon-remove close-icon"
+        onclick="closeModal()"
+      ></span>
     </div>
     <script>
       let modalBox = document.getElementById('modalbox');
@@ -35,7 +36,7 @@
         }, 3000);
       }
 
-      function closeModal(){
+      function closeModal() {
         modalBox.style.display = 'none';
       }
     </script>
